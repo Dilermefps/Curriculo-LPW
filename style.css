@@ -36,7 +36,7 @@ h2.titulo span{
 /* cabeçalho estilo */
 header{
    
-    padding: 20px 4%;
+    padding: 10px 4%;
 }
 
 header > .interface{
@@ -55,7 +55,7 @@ header nav ul{
 }
 header nav ul li{
     display: inline-block;
-    padding: 0 40px;
+    padding: 0px 60px;
 }
 
 header a:hover{
@@ -87,6 +87,7 @@ section.topo-do-site .flex{
 }
 .topo-do-site .txt-topo-site p{
     color: #FFF;
+    text-align: justify;
     margin: 40px 0;
 }
 .topo-do-site .img-topo-site img{
@@ -124,6 +125,66 @@ section.especialidades .flex{
     font-size: 28px;
     margin: 15px 0;
 }
+
+/*  ESTILO SOBRE */
+section.sobre{
+    padding: 40px 4%;
+}
+section.sobre .interface .flex .image-class-sobre img{
+    border-radius: 100px;
+    position: relative;
+}
+section.sobre .txt-sobre {
+    color : #FFF;
+
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+section.sobre .txt-sobre span{
+    display: block;
+    color: #2003ff;
+}
+section.sobre .txt-sobre h2{
+    font-size:40px ;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+section.sobre .txt-sobre p{
+    padding: 20px 0px;
+    text-align: justify;
+}
+section.sobre .btn-social button{
+    color: #f0f0f0;
+    border: 0ch;
+    background-color: #2003ff;
+    padding: 10px 10%;
+    margin: 0 30px;
+    border-radius: 369px;
+    font-size: 25px;
+    
+}
+section.sobre .btn-social button:hover{
+    box-shadow: 0 0 8px #666666;
+    transform: scale(1.05);
+    transition: 0.2s;
+    cursor: pointer;
+}
+@media (max-width: 1450px) {
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .menu-desktop,.btn-contato{
+        display: none;
+    }
+}
+    
+
 @keyframes mexer{
     0%{
         top: 0;
